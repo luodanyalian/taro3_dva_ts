@@ -1,0 +1,23 @@
+@import "../../assets/scss/variables";
+
+.#{$prefix} {
+  &-ptloading-wrap {
+    background-color: #bd0014;
+    .content {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+      color: #ffffff;
+      .icon_loading {
+        width: 352px;
+        height: 352px;
+      }
+      .label {
+        display: block;
+        margin-top: 2px;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@import '../../assets/scss/variables.scss';
+
+.app {
+  .header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #bd0014;
+
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      left: 15px;
+      bottom: 0;
+    }
+    .title {
+      color: #fff;
+    }
+
+    &.transparent {
+      opacity: 0;
+    }
+  }
+
+  .container {
+    z-index: 8;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    &.bkg-white {
+      background-image: url($base-url+'/images/img/img_bg_page_01_812h@3x.jpg');
+    }
+  }
+}

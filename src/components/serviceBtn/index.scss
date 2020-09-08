@@ -1,0 +1,27 @@
+@import "../../assets/scss/variables";
+
+.#{$prefix} {
+  &-serviceBtn-wrap {
+    width: 112px;
+    height: 296px;
+    position: fixed;
+    bottom: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    .contact-button {
+      width: 112px;
+      height: 148px;
+      border: 0px;
+      padding: 0px;
+      margin: 0px;
+      background-color: transparent;
+    }
+    .btn {
+      width: 112px;
+      height: 148px;
+    }
+  }
+}

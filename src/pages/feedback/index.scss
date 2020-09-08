@@ -1,0 +1,8 @@
+
+    @import "../../assets/scss/variables";
+    .#{$prefix} {
+        &-feedback-wrap {
+            width: 100%;
+            min-height: 100Vh;
+        }
+    }

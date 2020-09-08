@@ -1,0 +1,35 @@
+@import "../../assets/scss/variables";
+
+.#{$prefix} {
+  &-empty-wrap {
+    width: 600px;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    transform: translateY(-50%);
+    .img {
+      width: 216px;
+      height: 216px;
+      margin-bottom: 48px;
+    }
+    .title {
+      font-size: 32px;
+      color: #646464;
+      font-weight: bold;
+      letter-spacing: 0;
+      text-align: center;
+      line-height: 42px;
+    }
+    .p {
+      margin-top: 16px;
+      font-size: 24px;
+      color: #959595;
+      letter-spacing: 0;
+      text-align: center;
+      line-height: 42px;
+    }
+  }
+}
