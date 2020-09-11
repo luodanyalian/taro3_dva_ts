@@ -5,7 +5,7 @@ import Tips from './tips'
 
 // 封装请求
 
-declare type Methohs =
+declare type Methods =
   | 'GET'
   | 'OPTIONS'
   | 'HEAD'
@@ -14,11 +14,11 @@ declare type Methohs =
   | 'TRACE'
   | 'CONNECT'
 declare type Headers = { [key: string]: string }
-declare type Datas = { method: Methohs; [key: string]: any }
+declare type Datas = { method: Methods; [key: string]: any }
 interface Options {
   url: string
   host?: string
-  method?: Methohs
+  method?: Methods
   data?: Datas
   header?: Headers
 }
@@ -37,7 +37,7 @@ export class Request {
   static token: string = ''
 
   // 开始处理options
-  static conbineOptions(opts, data: Datas, method: Methohs): Options {
+  static conbineOptions(opts, data: Datas, method: Methods): Options {
     typeof opts === 'string' && (opts = { url: opts })
     return {
       data: { ...commonParame, ...opts.data, ...data },
