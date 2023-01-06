@@ -58,7 +58,7 @@
   "devDependencies": {
     "@babel/core": "^7.8.0",
     "@tarojs/mini-runner": "3.0.9",
-    "@tarojs/webpack-runner": "3.0.9",
+    "@tarojs/webpack-runner": "3.5.11",
     "@types/react": "^16.0.0",
     "@types/webpack-env": "^1.13.6",
     "@typescript-eslint/eslint-plugin": "^2.x",
